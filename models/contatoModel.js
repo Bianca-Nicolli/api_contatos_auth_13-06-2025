@@ -41,6 +41,11 @@ type: String, // Pode ser uma URL ou caminho de arquivo
 
 required: [true, 'A foto é obrigatória']
 
+},
+
+    usuario: { type: mongoose.Schema.Types.ObjectId,
+         ref: 'Usuario', 
+         required: true 
 }
 
 }, {
